@@ -1,0 +1,576 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,html{
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
+}
+.wrapper{
+  margin:0 auto;
+  position:relative;
+  
+}
+body{
+  font-family:"Source Sans Pro",sans-serif;
+  font-size:1em;
+  background-color: #fff;
+  color:#000;
+  margin:0 auto;
+  padding:0;
+  width:100%;
+  height:100%;
+  justify-content: center;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio
+, video{
+
+  font-size:100%;
+  border:0;
+  margin:0;
+  padding:0;
+  vertical-align: baseline;
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+  font-weight:900;
+  font-size:5em;
+}
+section h1{
+  font-size:6em;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+  display:block;
+}
+header, section, article, footer, header{
+
+  width:100%;
+}
+header{
+  position:relative;
+  z-index:10000;
+  padding:16px 0 20px 0;
+}
+.wrapper{
+  width:100%;
+  height:100%;
+  margin:0 auto;
+}
+/* logo section */
+.logo{
+  margin: 0px 0px 0px 90px;
+  padding: 0px 0px 20px 0px;
+  display: inline-block;
+  Position: absolute;
+  top: 20px;
+  left: 80px;
+}
+.icon-bg{
+  background:#1abc9c;
+  width:75px;
+  height:75px;
+  content:"";
+  overflow:hidden;
+  position:absolute;
+  z-index:-9999;
+  display: block;
+  -moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+svg{
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  overflow: hidden;
+  left: 20px;
+  top: 8px;
+  fill:#fff;
+  width:40px;
+  height:40px;
+}
+svg circle{
+  stroke:#fff;
+}
+.name{
+  color:#fff;
+  position: absolute;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 27px;
+  top: 46px;
+  font-size: 0.9em;
+}
+.tag-line p {
+  position: relative;
+  clear:both;
+  overflow: hidden;
+  display: inline-block;
+  text-align:left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #a6a1a1;
+  top: 10px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 120px;
+}
+.job-title{
+  font-style: italic;
+  color: #ccc;
+  display:inline-block;
+  text-align: left;
+  margin: 0 auto;
+  overflow: hidden;
+  position:relative;
+  left:-120px;
+  top:40px;
+}
+.banner-contact{
+  position:absolute;
+  display:inline-block;
+  right:0;
+  z-index:-99999;
+}
+.email{
+  font-weight:700;
+  color:#a6a1a1;
+}
+/* hamburger, overlay styles */
+#menu-wrapper{
+  position:relative;
+  display:none;
+  color:#fff;
+  margin-top:50px;
+  font-size:2.5em;
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+}
+#menu-wrapper.open{
+  display:block;
+}
+#menu-wrapper a{
+  display:block;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-weight:900;
+  color:#fff;
+  line-height: 95px;
+}
+#menu-wrapper a span{
+  text-transform:none;
+  font-size:0.7em;
+}
+.button-wrapper{
+  width:100%;
+  height:100%;
+  padding-top:50px;
+  top:0;
+  position:fixed;
+  background-color:#1abc9c;
+}
+.burger-btn{
+  display:inline-block;
+  margin:0 auto;
+  width:100%;
+  top:20px;
+  position:relative;
+}
+#close{
+  display:none;
+  position:relative;
+  max-width:38px;
+  font-size:2.5em;
+  font-weight:600;
+  margin:0 auto;
+  text-align:center;
+  width:100%;
+  height:100%;
+  top:0px;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+#close.open:before{
+  max-width:38px;
+  height:5px;
+  top:5px;
+  background:#10131a;
+  display:block;
+  content:"";
+  transform:rotate(45deg);
+  position:relative;
+}
+#close.open:after{
+  max-width:38px;
+  height:5px;
+  background:#10131a;
+  display:block;
+  content:"";
+  transform:rotate(-45deg);
+
+}
+#close.open{
+  transform:translateY(40%);
+  display:block;
+}
+#menu{
+  display:block;
+  position:relative;
+  width:28px;
+  height:100%;
+  margin:0 auto;
+  height:13px;
+  border-top:1px solid #040707;
+  z-index:16;
+}
+#menu:before{
+  position:absolute;
+  width:28px;
+  top:7px;
+  width:28px;
+  content:"";
+  border-top:1px solid #040707;
+}
+#menu:after{
+  position:absolute;
+  width: 28px;
+  right: 0;
+  top: 15px;
+  content:"";
+  border-top: 1px solid #040707;
+}
+/* styles for intro hero section */
+.main-page,
+section{
+  width:100%;
+  height:100%;
+  position:relative;
+  margin:0 auto;
+  text-align: center;
+}
+.intro{
+  background-image: url('../img/hero.jpg');
+  background-repeat:no-repeat;
+  background-position:center center;
+  top:50px;
+  width:100%;
+  height:100%;
+  max-height:600px;
+  margin:0 auto;
+  background-size:cover;
+  position:absolute;
+  color:#fff;
+}
+.intro-heading{
+  margin-top:200px;
+}
+.intro-description{
+  padding-top:40px;
+}
+.mouse-scroll{
+  cursor:pointer;
+}
+.mouse-scroll img{
+  margin-top:50px;
+  max-width:40px;
+  max-height:40px;
+}
+.mouse-line{
+  position:relative;
+  display:block;
+  background-color:white;
+  width:2px;
+  height:6px;
+  top:-35px;
+  left:0px;
+  margin:0 auto;
+  text-align:center;
+  animation-name:drop;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.about-me{
+  max-width:960px;
+  margin:0 auto;
+  margin-bottom:50px;
+}
+section.about-me h1,
+section.portfolio h1{
+  white-space: nowrap;
+  margin:0 auto;
+  margin-top:30px;
+  overflow:hidden;
+  font-size:7em;
+}
+.animate.loaded{
+  animation:typing 3.5s steps(20, end),
+  blink-caret .5s step-end infinite;
+  -webkit-animation:typing 3.5s steps(40, end),
+  blink-caret .5s step-end infinite;
+  -moz-animation:typing 3.5s steps(40, end),
+  blink-caret .5s step-end infinite;
+  -o-animation:typing 3.5s steps(40, end),
+  blink-caret .5s step-end infinite ;
+  border-right: 0.15em solid orange;
+}
+.self-intro{
+  margin-top:50px;
+  font-size:2em;
+  font-weight:100;
+  letter-spacing:3px;
+  line-height:1.5;
+}
+.btn-default{
+  border:1px solid #000;
+  background: transparent;
+  box-sizing: border-box;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight:300;
+  cursor:pointer;
+  font-size:0.8em;
+  display:inline-block;
+  margin:70px 10px ;
+  padding:18px 40px 16px;
+}
+.btn-default:hover{
+  background-color:#1abc9c;
+  text-decoration: none;
+  color:#fff;
+  text-shadow: none !important;
+  border:none;
+  transition:all 0.6s ease-in-out ;
+  -webkit-transition:all 0.6s ease-in-out ;
+  -moz-transition:all 0.6s ease-in-out;
+  -o-transition:all 0.6s ease-in-out ;
+}
+section.contact-me,
+section.about-me,
+section.portfolio{
+  height:auto;
+}
+.portfolio{
+  width:100%;
+  padding:50px 0 110px 0;
+  margin:0 auto;
+  height:auto;
+  background-color: #F8F7F5;
+
+}
+section.portfolio h1{
+  padding-bottom:70px;
+}
+.container{
+  padding-left:0 !important;
+  padding-right:0 !important;
+  width:100%;
+}
+.col-md-3{
+  padding-left:0 !important;
+  padding-right:0 !important;
+  margin-bottom:0px;
+}
+.portfolio img{
+  width:100%;
+  max-height:400px;
+  margin-bottom:-5px;
+}
+.overlay{
+  clear:both;
+  position:absolute;
+  min-width:100%;
+  min-height:100%;
+  top:0;
+  left:0;
+  right:0;
+  background-color:#1abc9c;
+  color:#fff;
+  font-weight:100;
+  font-size:1em;
+  opacity:0;
+  text-align:center;
+}
+.box:hover .overlay{
+  opacity:1;
+}
+.overlay h1{
+  font-size:2em !important;
+}
+.overlay span .fa-angle-right{
+  position:absolute;
+  bottom:0;
+  right:0;
+  padding:0 40px 40px 0;
+  font-weight:100;
+  color:#fff;
+  font-size:1.8em;
+}
+.line:before{
+  content:"";
+  display:block;
+  height:5px;
+  width:60px;
+  background-color:#fff;
+  position: absolute;
+  top: 80px;
+  left: 42px;
+}
+.contact-me{
+  padding:70px 0 110px 0;
+  background-color: #706d6d;
+  color:#fff;
+  position:relative;
+}
+.contact-me p{
+  padding:20px 0 20px 0;
+}
+.social-links{
+  padding-top:20px;
+  display:block;
+}
+.social-links ul{
+  margin:0 auto;
+  vertical-align:middle;
+  text-align:center;
+}
+.social-links li{
+  display:inline-block;
+  vertical-align: middle;
+}
+.social-links li a{
+  display:block;
+  margin-right:50px;
+  line-height: 32px;
+  position:relative;
+  text-align: center;
+}
+.social-links li:last-child{
+  margin-right:0;
+}
+.twitter-svg,
+.github-svg,
+.facebook-svg,
+.behance-svg{
+  width:40px;
+  height:40px;
+  position:relative;
+  text-align:center;
+  margin:0 auto;
+
+}
+@-webkit-keyframes drop {
+  0% {
+    top:-35px;
+    opacity: 0;
+  }
+  30% {
+    top:-30px;
+    opacity: 1;
+  }
+  100% {
+    top:-25px;
+    opacity: 0;
+  }
+}
+@keyframes drop {
+  0% {
+    top:-35px;
+    opacity: 0;
+  }
+  30% {
+    top:-30px;
+    opacity: 1;
+  }
+  100% {
+    top:-25px;
+    opacity: 0;
+  }
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  0% { border-color: transparent }
+  50% { border-color: orange; }
+  100% { border-color: transparent }
+}
+@-webkit-keyframes blink-caret {
+  0% { border-color: transparent }
+  50% { border-color: orange; }
+  100% { border-color: transparent }
+}
+@media only screen and (min-width:1024px)  {
+  .logo{
+    left:100px;
+  }
+  .tag-line p{
+    left:10px;
+    top:10px;
+  }
+}
+
+/* styles for wide screens */
+@media only screen and (min-width:1400px){
+  .tag-line p{
+    left:70px;
+  }
+  .job-title{
+    left:-50px;
+  }
+  .banner-contact{
+    right:250px;
+  }
+  #menu{
+    left:0px;
+  }
+
+}
+@media only screen and (max-width:990px) and (min-width:678px){
+  .portfolio img{
+    height:450px !important;
+  }
+  .container{
+    width:100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media only screen and (max-width:678px) and (min-width:380px) {
+  .tag-line p,
+  .job-title,
+  .banner-contact{
+    display:none;
+  }
+  .logo{
+    float:left;
+    position:fixed;
+    width:100%;
+    margin:0 auto;
+  }
+  .banner-contact{
+    right:0;
+    position:absolute;
+  }
+
+
+}
