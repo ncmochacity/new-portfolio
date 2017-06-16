@@ -563,7 +563,11 @@ section.portfolio h1{
   .logo{
     top:0px;
   }
-
+  .tag-line p,
+  .job-title,
+  .banner-contact{
+    display:none;
+  }
 }
 @media only screen and (max-width:678px) and (min-width:380px) {
   .tag-line p,
