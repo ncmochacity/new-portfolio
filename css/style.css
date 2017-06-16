@@ -12,7 +12,7 @@ body,html{
 .wrapper{
   margin:0 auto;
   position:relative;
-  
+
 }
 body{
   font-family:"Source Sans Pro",sans-serif;
@@ -521,11 +521,15 @@ section.portfolio h1{
 }
 @media only screen and (min-width:1024px)  {
   .logo{
+    top:0px;
     left:100px;
   }
   .tag-line p{
     left:10px;
     top:10px;
+  }
+  .banner-contact{
+    right:150px;
   }
 }
 
@@ -538,12 +542,14 @@ section.portfolio h1{
     left:-50px;
   }
   .banner-contact{
-    right:250px;
+    right:150px;
   }
   #menu{
     left:0px;
   }
-
+  .logo{
+    top:0px;
+  }
 }
 @media only screen and (max-width:990px) and (min-width:678px){
   .portfolio img{
@@ -554,6 +560,10 @@ section.portfolio h1{
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .logo{
+    top:0px;
+  }
+
 }
 @media only screen and (max-width:678px) and (min-width:380px) {
   .tag-line p,
@@ -568,7 +578,7 @@ section.portfolio h1{
     margin:0 auto;
   }
   .banner-contact{
-    right:0;
+    right:0px;
     position:absolute;
   }
 
