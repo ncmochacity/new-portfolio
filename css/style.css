@@ -521,7 +521,8 @@ section.portfolio h1{
 }
 @media only screen and (min-width:1024px)  {
   .logo{
-    top:0px;
+    position:fixed;
+    top:10px;
     left:100px;
   }
   .tag-line p{
@@ -548,7 +549,7 @@ section.portfolio h1{
     left:0px;
   }
   .logo{
-    top:0px;
+    top:10px;
   }
 }
 @media only screen and (max-width:990px) and (min-width:678px){
@@ -561,7 +562,10 @@ section.portfolio h1{
     padding-right: 0 !important;
   }
   .logo{
-    top:0px;
+    position:fixed;
+    margin:0 auto;
+    width:100%;
+    margin:0 auto;
   }
   .tag-line p,
   .job-title,
@@ -579,6 +583,7 @@ section.portfolio h1{
     float:left;
     position:fixed;
     width:100%;
+    left:50px;
     margin:0 auto;
   }
   .banner-contact{
